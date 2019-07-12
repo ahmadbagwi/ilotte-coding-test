@@ -1,0 +1,135 @@
+body {
+	background: #E7E8EC !important;
+}
+
+.header-slider {
+
+    z-index: 1000 !important;
+    position: absolute;
+    display: inline-block;
+    padding: 1rem;
+    width: 100%;
+    background: url(../img/background-header-2.png);
+    background-size: 100%;
+	background-repeat: no-repeat;
+
+}
+
+.content-header {
+	margin-top: 0.5rem;
+}
+.slider-box {
+
+    position: relative;
+    display: block;
+
+}
+
+#search::-webkit-input-placeholder {
+  color: transparent;
+  text-indent: -9999px;
+  background-image: url("../img/logo-ilotte.png");
+  background-position: 10% 50%;
+  background-repeat: no-repeat; 
+}
+#search::-moz-placeholder {
+  /* Firefox 19+ */
+  color: transparent;
+  text-indent: -9999px;
+  background-image: url("../img/logo-ilotte.png");
+  background-position: 10% 50%;
+  background-repeat: no-repeat; 
+}
+#search:-moz-placeholder {
+  /* Firefox 18- */
+  color: transparent;
+  text-indent: -9999px;
+  background-image: url("../img/logo-ilotte.png");
+  background-position: 10% 50%;
+  background-repeat: no-repeat; 
+}
+#search:-ms-input-placeholder {
+  /* IE 10- */
+  color: transparent;
+  text-indent: -9999px;
+  background-image: url("../img/logo-ilotte.png");
+  background-position: 10% 50%;
+  background-repeat: no-repeat; 
+}
+
+.form-search {
+	display: inline;
+}
+
+#search-button {
+    margin-left: -1.5rem;
+}
+
+.logobox {
+    margin-left: 4rem;
+}
+
+.searchbox {
+	margin-left: 0.8rem;
+}
+
+.burgerbox {
+	margin-left: 0.8rem;
+}
+
+.burgerbox, .searchbox, .logobox {
+	display: inline;
+}
+
+.searchbox .search {
+	border-radius: 1rem;
+	border: 0
+}
+
+.main-banner {
+
+    margin: 0.4rem auto;
+
+}
+
+.main-banner img {
+
+    width: 100%;
+
+}
+
+.category {
+    background: #fff;
+    margin: 0.4rem auto;
+    text-align: center;
+    padding: 0.9rem;
+}
+
+.category tr td {
+
+    font-size: 0.9rem;
+    line-height: 1.2;
+    vertical-align: top;
+}
+.promotion {
+    background: #fff;
+    margin: 0.4rem auto;
+    text-align: center;
+    padding: 0.5rem;
+    list-style: none;
+}
+
+.promotion ul li {
+    list-style: none;
+    display: inline;
+}
+
+.new-arrival-heading {
+    margin: 0.4rem auto;
+    text-align: left;
+    padding: 0.5rem;
+}
+
+.swiper-slide img {
+	width: 100%;
+}

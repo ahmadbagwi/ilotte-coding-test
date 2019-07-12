@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>iLotte.com</title>
+	<meta charset="utf-8">
+	<!-- Set viewport for responsive -->
+	<meta id="myViewport" name="viewport" content="width=device-width, initial-scale=0,5">
+	<!-- Add Bootstrap for grid layouting -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/ilotte.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/swiper.min.css">
+	<!-- Add Bootstrap js for effect carousel/slider -->
+	<script src="assets/js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+	<script src="assets/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="assets/js/swiper.min.js"></script>
+	<!-- jQuery -->
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+	<script>
+	if (screen.width > 590) {
+	    var mvp = document.getElementById('myViewport');
+	    mvp.setAttribute('content','width=980');
+	}
+	</script>
+</head>
+<body>
+	<div class="container-fluid px-0">
+		<div class="row justify-content-center"">
+			<div class="col-lg-4 col-sm-12 col-xs-12 px-0">
+				<div class="main-slider">
+					<div class="header-slider">
+						<div class="content-header">
+							<div class="burgerbox">
+								<a href="#"><img class="mobile-menu" src="assets/img/burger-menu.png"></a>
+							</div>
+							<div class="searchbox">
+								<form class="form-search">
+									<input type="text" class="search" id="search" name="search" placeholder="Cari">
+									<input type="image" id="search-button" src="assets/img/search.png" alt="Submit"> 
+								</form>
+							</div>
+							<div class="logobox">
+								<img class="logo-mall" src="assets/img/logo-mall.png">
+							</div>
+						</div>
+					</div>
+					<div class="sliderbox">
+						<div class="swiper-container-main-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img class="d-block w-100" src="assets/img/main-slider-1.png" alt="First slide"></div>
+								<div class="swiper-slide"><img class="d-block w-100" src="assets/img/main-slider-2.png" alt="Second slide"></div>
+								<div class="swiper-slide"><img class="d-block w-100" src="assets/img/main-slider-3.png" alt="Third slide"></div>
+								
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="main-banner">
+					<img src="assets/img/main-banner.png">
+				</div>
+
+				<div class="category">
+					<table>
+						<tr class="category-icon">
+							<td><img class="category-img" src="assets/img/fashion.png"></td>
+							<td><img class="category-img" src="assets/img/beauty.png"></td>
+							<td><img class="category-img" src="assets/img/mom.png"></td>
+							<td><img class="category-img" src="assets/img/electronic.png"></td>
+							<td><img class="category-img" src="assets/img/sport.png"></td>
+						</tr>
+						<tr class="category-title">
+							<td>Fashion</td>
+							<td>Beauty & Health</td>
+							<td>Mom & Kid</td>
+							<td>Electronic & Living</td>
+							<td>Sport & Hobby</td>
+						</tr>
+						<tr class="category-icon">
+							<td><img class="category-img" src="assets/img/groceries.png"></td>
+							<td><img class="category-img" src="assets/img/pulsa.png"></td>
+							<td><img class="category-img" src="assets/img/promo.png"></td>
+							<td><img class="category-img" src="assets/img/k-wave.png"></td>
+							<td><img class="category-img" src="assets/img/ilotte-free.png"></td>
+						</tr>
+						<tr class="category-title">
+							<td>Groceries & Services</td>
+							<td>Pulsa</td>
+							<td>Promo</td>
+							<td>K-Wave</td>
+							<td>iLOTTE Free</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="promotion">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="assets/img/promotion1.png"></div>
+							<div class="swiper-slide"><img src="assets/img/promotion2.png"></div>
+							<div class="swiper-slide"><img src="assets/img/promotion3.png"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="new-arrival-heading">
+					<img src="assets/img/new-arrival-heading.png">
+				</div>
+				<div class="new-arrival">
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		var swiper = new Swiper('.swiper-container-main-slider', {autoplay: {delay: 2000,},loop:true});
+	</script>
+
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			slidesPerView: 2,
+			spaceBetween: 30,
+			centeredSlides: true,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+		});
+	</script>
+
+</body>
+</html>
