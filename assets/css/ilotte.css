@@ -86,13 +86,19 @@ body {
 	border: 0
 }
 
-.main-banner {
+.main-banner, .second-banner {
 
     margin: 0.4rem auto;
 
 }
 
-.main-banner img {
+.main-slider-item img {
+
+    width: 100%;
+
+}
+
+.surprise-banner img {
 
     width: 100%;
 
@@ -102,16 +108,16 @@ body {
     background: #fff;
     margin: 0.4rem auto;
     text-align: center;
-    padding: 0.9rem;
+    padding: 0.7rem;
 }
 
 .category tr td {
 
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     line-height: 1.2;
     vertical-align: top;
 }
-.promotion {
+.promotion, .second-banner {
     background: #fff;
     margin: 0.4rem auto;
     text-align: center;
@@ -124,12 +130,92 @@ body {
     display: inline;
 }
 
-.new-arrival-heading {
+.new-arrival-heading, .surprise-heading {
     margin: 0.4rem auto;
     text-align: left;
     padding: 0.5rem;
 }
 
-.swiper-slide img {
+.promotion img, .main-banner img {
 	width: 100%;
+}
+
+.new-arrival {
+    padding: 0.8rem;
+}
+
+.disc {
+    background: #707070;
+    color: #fff;
+    padding: 0.1rem;
+    font-size: 0.8rem;
+    position: relative;
+    bottom: 1.5rem;
+    width: max-content;
+    border-radius: 0 35% 35% 0;
+}
+
+.title-item, .description, .normal-price, .disc-price {
+    font-size: 0.9rem;
+
+}
+.title-item {
+    position: relative;
+
+    bottom: 1.5rem;
+
+    font-weight: bold;
+
+    line-height: 1.2rem;
+
+    font-size: 0.9rem;
+
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.description {
+    color: #777;
+    position: relative;
+    bottom: 1.5rem;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.normal-price {
+
+    color: #999;
+    position: relative;
+    bottom: 1.5rem;
+    text-align: right;
+    text-decoration: line-through;
+
+}
+
+.disc-price {
+
+    position: relative;
+    bottom: 1.5rem;
+    text-align: right;
+    font-size: 1rem;
+    color: #DB2C27;
+
+}
+
+.new-arrival-item {
+
+    background: #fff;
+    padding: 0.3rem;
+
+}
+
+.second-banner img {
+    
+}
+.footer {
+    height: 1.5rem;
 }

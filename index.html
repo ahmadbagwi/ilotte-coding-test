@@ -4,7 +4,7 @@
 	<title>iLotte.com</title>
 	<meta charset="utf-8">
 	<!-- Set viewport for responsive -->
-	<meta id="myViewport" name="viewport" content="width=device-width, initial-scale=0,5">
+	<meta id="myViewport" name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Add Bootstrap for grid layouting -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/ilotte.css">
@@ -45,11 +45,11 @@
 						</div>
 					</div>
 					<div class="sliderbox">
-						<div class="swiper-container-main-slider">
+						<div class="swiper-container swiper-container-main-slider">
 							<div class="swiper-wrapper">
-								<div class="swiper-slide"><img class="d-block w-100" src="assets/img/main-slider-1.png" alt="First slide"></div>
-								<div class="swiper-slide"><img class="d-block w-100" src="assets/img/main-slider-2.png" alt="Second slide"></div>
-								<div class="swiper-slide"><img class="d-block w-100" src="assets/img/main-slider-3.png" alt="Third slide"></div>
+								<div class="swiper-slide main-slider-item"><img src="assets/img/main-slider-1.png" ></div>
+								<div class="swiper-slide main-slider-item"><img src="assets/img/main-slider-2.png" ></div>
+								<div class="swiper-slide main-slider-item"><img src="assets/img/main-slider-3.png" ></div>
 								
 							</div>
 						</div>
@@ -95,7 +95,7 @@
 				</div>
 
 				<div class="promotion">
-					<div class="swiper-container">
+					<div class="swiper-container swiper-container-promotion">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide"><img src="assets/img/promotion1.png"></div>
 							<div class="swiper-slide"><img src="assets/img/promotion2.png"></div>
@@ -108,27 +108,108 @@
 					<img src="assets/img/new-arrival-heading.png">
 				</div>
 				<div class="new-arrival">
-
+					<div class="swiper-container swiper-container-new-arrival">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide new-arrival-item">
+								<img src="assets/img/big-hit.png">
+								<div class="disc">10%</div>
+								<div class="title-item">Big Hit Entertainment</div>
+								<div class="description">BTS MAP OF THE SOUL PERSONA (Random Version)</div>
+								<div class="normal-price">Rp 254.000</div>
+								<div class="disc-price"><strong>Rp 229.000</strong></div> 
+							</div>
+							<div class="swiper-slide new-arrival-item">
+								<img src="assets/img/masami.png">
+								<div class="disc">70%</div>
+								<div class="title-item">MASAMI SHOUKO</div>
+								<div class="description">Masami Shouko 7</div>
+								<div class="normal-price">Rp 649.000</div>
+								<div class="disc-price"><strong>Rp 194.700</strong></div> 
+							</div>
+							<div class="swiper-slide new-arrival-item">
+								<img src="assets/img/marhen.png">
+								<div class="disc">10%</div>
+								<div class="title-item">MARHEN.J</div>
+								<div class="description">Marhen J Rico</div>
+								<div class="normal-price">Rp 1.434.000</div>
+								<div class="disc-price"><strong>Rp 1.290.000</strong></div> 
+							</div>
+							<div class="swiper-slide new-arrival-item">
+								<img src="assets/img/marhen.png">
+								<div class="disc">10%</div>
+								<div class="title-item">MARHEN.J</div>
+								<div class="description">Marhen J Rico</div>
+								<div class="normal-price">Rp 1.434.000</div>
+								<div class="disc-price"><strong>Rp 1.290.000</strong></div>
+							</div>
+						</div>
+					</div>
 				</div>
+				<div class="second-banner">
+					<div class="swiper-container swiper-container-store">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide store-item"><img src="assets/img/store-1.png"></div>
+							<div class="swiper-slide store-item"><img src="assets/img/k-mall.png"></div>
+							<div class="swiper-slide store-item"><img src="assets/img/store-2.png"></div>
+						</div>
+					</div>
+				</div>
+				<div class="surprise-heading">
+						<img src="assets/img/surprise-heading.png">
+				</div>
+				<div class="surprise-banner">
+						<img src="assets/img/surprise.png">
+				</div>
+				<div class="footer"></div>
 			</div>
 		</div>
 	</div>
 
 	<script>
-		var swiper = new Swiper('.swiper-container-main-slider', {autoplay: {delay: 2000,},loop:true});
+		var swiperMainSlider = new Swiper('.swiper-container-main-slider', {autoplay: {delay: 2000,},loop:true,slidesPerView: 1, speed:200});
 	</script>
 
 	<script>
-		var swiper = new Swiper('.swiper-container', {
+		var swiperPromotion = new Swiper('.swiper-container-promotion', {
 			slidesPerView: 2,
 			spaceBetween: 30,
-			centeredSlides: true,
+			centeredSlides: false,
 			pagination: {
 				el: '.swiper-pagination',
 				clickable: true,
 			},
 		});
 	</script>
+
+	<script>
+		var swiperNewArrival = new Swiper('.swiper-container-new-arrival', {
+			slidesPerView: 3,
+			spaceBetween: 10,
+			centeredSlides: false,
+			/*setWrapperSize: {
+				height: 50px;
+				width:50px;
+			}*/
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+		});
+		//swiperNewArrival.width(auto);
+	</script>
+
+	<script>
+		var swiperStore = new Swiper('.swiper-container-store', {
+			slidesPerView: 1,
+			spaceBetween: 10,
+			freeMode: true,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+		});
+	</script>
+	
 
 </body>
 </html>
